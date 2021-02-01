@@ -1,0 +1,24 @@
+{
+  "name": "restuarant_review",
+  "version": "1.0.0",
+  "description": "This exercise uses a schema file and a seed file to create a database in PostgreSQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:create": "createdb restaurant_review",
+    "db:destroy": "dropdb restaurant_review",
+    "db:init": "psql -f schema.sql restaurant_review",
+    "db:seed": "psql -f seed.sql restaurant_review"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-manack/restaurant_review.git"
+  },
+  "keywords": [],
+  "author": "John Manack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-manack/restaurant_review/issues"
+  },
+  "homepage": "https://github.com/john-manack/restaurant_review#readme"
+}
